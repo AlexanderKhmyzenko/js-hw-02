@@ -1,14 +1,8 @@
-const employees = 4;
-const minSalary = 500;
-const maxSalary = 5000;
-let totalSalary = 0;
+let a = 10;
+let b = a;
+console.log(a);
+console.log(b);
 
-for (let i = 1; i <= employees; i += 1) {
-  const salary = Math.round(
-    Math.random() * (maxSalary - minSalary) + minSalary
-  );
-  console.log(`Зп работника номер ${i} - ${salary}`);
-  totalSalary += salary;
-}
-
-console.log("totalSalary:", totalSalary);
+a = 20;
+console.log(a);
+console.log(b);
